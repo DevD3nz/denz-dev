@@ -442,7 +442,7 @@ export class WorksComponent {
     {
       title: 'Course WordPress Site',
       description: 'Custom course website with advanced filtering, payment integration, and inventory management.',
-      image: '/assets/projects/pediatricworkbook-asset.png',
+      image: 'denz-dev/assets/projects/pediatricworkbook-asset.png',
       category: 'WordPress',
       technologies: ['WordPress', 'WooCommerce', 'Elementor', 'Google Analytics', 'PHP', 'MySQL', 'JavaScript', 'Custom Plugin', 'Basic SEO'],
       liveUrl: 'https://pediatricdentistryworkbook.com/',
@@ -453,7 +453,7 @@ export class WorksComponent {
     {
       title: 'E4 Condotel Wordpress Site',
       description: 'AirBnb Type of Website with Booking System.',
-      image: '/assets/projects/e4condotel-asset.jpg',
+      image: 'denz-dev/assets/projects/e4condotel-asset.jpg',
       category: 'WordPress',
       technologies: ['WordPress', 'WooCommerce', 'PHP', 'MySQL', 'JavaScript', 'Custom Plugin', 'AirBnb API Integration'],
       liveUrl: 'expired', // Change this to 'expired'
@@ -464,7 +464,7 @@ export class WorksComponent {
     {
       title: 'Official Organizational Website',
       description: 'Official Organizational Website for the organization.',
-      image: '/assets/projects/PDA-ASSET.png',
+      image: 'denz-dev/assets/projects/PDA-ASSET.png',
       category: 'WordPress',
       technologies: ['WordPress', 'Custom Plugin', 'PHP', 'JavaScript', 'Elementor'],
       liveUrl: 'https://pda-cdomisor.com/',
