@@ -66,11 +66,11 @@ import { FormsModule } from '@angular/forms';
                 <ul class="contact-info">
                   <li>
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:calatravaalden&#64;gmail.com">calatravaalden&#64;gmail.com</a>
+                    <a href="mailto:denz.devtest&#64;gmail.com">denz.devtest&#64;gmail.com</a>
                   </li>
                   <li>
                     <i class="fas fa-phone"></i>
-                    <a href="tel:+639123456789">+63 912 345 6789</a>
+                    <a href="tel:+639123456789">+63 09764449562</a>
                   </li>
                   <li>
                     <i class="fas fa-map-marker-alt"></i>
@@ -85,35 +85,16 @@ import { FormsModule } from '@angular/forms';
             </div>
           </div>
 
-          <!-- Newsletter Signup -->
-          <div class="newsletter-section">
-            <h4 class="newsletter-title">Stay Updated</h4>
-            <p class="newsletter-description">
-              Subscribe to get the latest web development tips and project updates
-            </p>
-            <form class="newsletter-form" (ngSubmit)="subscribeNewsletter()">
-              <div class="newsletter-input">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email address"
-                  [(ngModel)]="newsletterEmail"
-                  required
-                >
-                <button type="submit" class="newsletter-btn">
-                  <i class="fas fa-paper-plane"></i>
-                </button>
-              </div>
-            </form>
-          </div>
+
 
           <!-- Quick Stats -->
           <div class="footer-stats">
             <div class="stat-item">
-              <span class="stat-number">50+</span>
+              <span class="stat-number">8+</span>
               <span class="stat-label">Projects</span>
             </div>
             <div class="stat-item">
-              <span class="stat-number">3+</span>
+              <span class="stat-number">4+</span>
               <span class="stat-label">Years</span>
             </div>
             <div class="stat-item">

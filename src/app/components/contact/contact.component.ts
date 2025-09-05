@@ -17,198 +17,18 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
         </div>
 
         <div class="contact-content">
-          <!-- Contact Info -->
           <div class="contact-info fade-in-up">
-            <h3 class="info-title">Let's Connect</h3>
-            <p class="info-description">
-              I'm always interested in new opportunities and exciting projects. 
-              Whether you have a question or just want to say hi, feel free to reach out!
-            </p>
-
             <div class="contact-methods">
-              <div class="contact-method">
-                <div class="method-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="method-content">
-                  <h4>Email</h4>
-                  <a href="mailto:calatravaalden&#64;gmail.com">calatravaalden&#64;gmail.com</a>
-                </div>
-              </div>
+              <a href="mailto:denz.devtest&#64;gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                denz.devtest&#64;gmail.com
+              </a>
 
-              <div class="contact-method">
-                <div class="method-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="method-content">
-                  <h4>Phone</h4>
-                  <a href="tel:+639123456789">+63 912 345 6789</a>
-                </div>
-              </div>
-
-              <div class="contact-method">
-                <div class="method-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="method-content">
-                  <h4>Location</h4>
-                  <span>Philippines</span>
-                </div>
-              </div>
-
-              <div class="contact-method">
-                <div class="method-icon">
-                  <i class="fas fa-clock"></i>
-                </div>
-                <div class="method-content">
-                  <h4>Availability</h4>
-                  <span>Mon - Fri, 9:00 AM - 6:00 PM (PHT)</span>
-                </div>
-              </div>
+              <a href="tel:+639123456789" class="contact-link">
+                <i class="fas fa-phone"></i>
+                +63 09764449562
+              </a>
             </div>
-
-            <div class="social-links">
-              <h4>Follow Me</h4>
-              <div class="social-icons">
-                <a href="https://www.linkedin.com/in/d3nzofficials/" target="_blank" class="social-link">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/alden-calatrava" target="_blank" class="social-link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://twitter.com/alden-calatrava" target="_blank" class="social-link">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://instagram.com/alden-calatrava" target="_blank" class="social-link">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="contact-form fade-in-up">
-            <h3 class="form-title">Send Message</h3>
-            
-            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name" class="form-label">Full Name *</label>
-                  <input 
-                    type="text" 
-                    id="name"
-                    formControlName="name"
-                    class="form-input"
-                    [class.error]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
-                    placeholder="Your full name"
-                  >
-                  <div class="error-message" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
-                    Name is required
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="email" class="form-label">Email Address *</label>
-                  <input 
-                    type="email" 
-                    id="email"
-                    formControlName="email"
-                    class="form-input"
-                    [class.error]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
-                    placeholder="your.email&#64;example.com"
-                  >
-                  <div class="error-message" *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
-                    <span *ngIf="contactForm.get('email')?.errors?.['required']">Email is required</span>
-                    <span *ngIf="contactForm.get('email')?.errors?.['email']">Please enter a valid email</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="phone" class="form-label">Phone Number</label>
-                  <input 
-                    type="tel" 
-                    id="phone"
-                    formControlName="phone"
-                    class="form-input"
-                    placeholder="+1 (555) 123-4567"
-                  >
-                </div>
-
-                <div class="form-group">
-                  <label for="budget" class="form-label">Project Budget</label>
-                  <select id="budget" formControlName="budget" class="form-input">
-                    <option value="">Select budget range</option>
-                    <option value="500-1000">$500 - $1,000</option>
-                    <option value="1000-2500">$1,000 - $2,500</option>
-                    <option value="2500-5000">$2,500 - $5,000</option>
-                    <option value="5000+">$5,000+</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="service" class="form-label">Service Needed</label>
-                <select id="service" formControlName="service" class="form-input">
-                  <option value="">Select a service</option>
-                  <option value="wordpress">WordPress Development</option>
-                  <option value="angular">Angular Application</option>
-                  <option value="optimization">Web Performance Optimization</option>
-                  <option value="maintenance">Website Maintenance</option>
-                  <option value="consultation">Consultation</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="message" class="form-label">Project Details *</label>
-                <textarea 
-                  id="message"
-                  formControlName="message"
-                  class="form-textarea"
-                  [class.error]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
-                  placeholder="Tell me about your project, requirements, timeline, and any specific details..."
-                  rows="6"
-                ></textarea>
-                <div class="error-message" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
-                  Please provide project details
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="checkbox-label">
-                  <input type="checkbox" formControlName="newsletter">
-                  <span class="checkmark"></span>
-                  I'd like to receive updates about web development tips and insights
-                </label>
-              </div>
-
-              <button 
-                type="submit" 
-                class="btn btn-primary btn-lg submit-btn"
-                [disabled]="contactForm.invalid || isSubmitting"
-              >
-                <span *ngIf="!isSubmitting">
-                  <i class="fas fa-paper-plane"></i>
-                  Send Message
-                </span>
-                <span *ngIf="isSubmitting" class="loading-text">
-                  <i class="fas fa-spinner fa-spin"></i>
-                  Sending...
-                </span>
-              </button>
-
-              <div class="success-message" *ngIf="submitSuccess">
-                <i class="fas fa-check-circle"></i>
-                Thank you! Your message has been sent successfully. I'll get back to you within 24 hours.
-              </div>
-
-              <div class="error-message" *ngIf="submitError">
-                <i class="fas fa-exclamation-circle"></i>
-                Something went wrong. Please try again or contact me directly via email.
-              </div>
-            </form>
           </div>
         </div>
 
@@ -231,18 +51,16 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
     }
 
     .contact-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      display: flex;
+      justify-content: center;
       margin-bottom: 6rem;
-
-      @media (max-width: 968px) {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-      }
     }
 
     .contact-info {
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+
       .info-title {
         font-size: 1.75rem;
         font-weight: 600;
@@ -260,82 +78,40 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
     .contact-methods {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      margin-bottom: 3rem;
+      gap: 2rem;
+      align-items: center;
     }
 
-    .contact-method {
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-    }
-
-    .method-icon {
-      width: 50px;
-      height: 50px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      border-radius: 50%;
+    .contact-link {
       display: flex;
       align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.25rem;
-      flex-shrink: 0;
-    }
-
-    .method-content {
-      h4 {
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-bottom: 0.25rem;
-      }
-
-      a {
-        color: var(--primary);
-        text-decoration: none;
-        font-weight: 500;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      span {
-        color: var(--text-secondary);
-      }
-    }
-
-    .social-links {
-      h4 {
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-bottom: 1rem;
-      }
-    }
-
-    .social-icons {
-      display: flex;
       gap: 1rem;
-    }
-
-    .social-link {
-      width: 50px;
-      height: 50px;
+      padding: 1rem 2rem;
       background: var(--bg-secondary);
       border: 1px solid var(--border);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-secondary);
+      border-radius: 50px;
+      color: var(--text-primary);
       text-decoration: none;
-      font-size: 1.25rem;
+      font-size: 1.1rem;
+      font-weight: 500;
       transition: all 0.3s ease;
+      min-width: 300px;
+      justify-content: center;
+
+      i {
+        color: var(--primary);
+        font-size: 1.2rem;
+      }
 
       &:hover {
         background: var(--primary);
         color: white;
-        transform: translateY(-3px);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+
+        i {
+          color: white;
+        }
       }
     }
 
