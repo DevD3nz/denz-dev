@@ -56,7 +56,8 @@ import { FormsModule } from '@angular/forms';
                   <li><a href="#services">WordPress Development</a></li>
                   <li><a href="#services">Angular Applications</a></li>
                   <li><a href="#services">Web Optimization</a></li>
-                  <li><a href="#services">SEO Services</a></li>
+                  <li><a href="#services">Google API Integration</a></li>
+                  <li><a href="#services">Custom Plugin Creation WordPress</a></li>
                   <li><a href="#services">Maintenance</a></li>
                 </ul>
               </div>
