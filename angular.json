@@ -37,8 +37,8 @@
           "configurations": {
             "production": {
               "outputPath": "docs",
-              "baseHref": "/",
-              "deployUrl": "/",
+              "baseHref": "/denz-dev/",
+              "deployUrl": "/denz-dev/",
               "budgets": [
                 {
                   "type": "initial",
