@@ -53,7 +53,7 @@ import { CommonModule } from '@angular/common';
           <div class="hero-image fade-in">
             <div class="image-container">
               <div class="profile-image">
-                <img src="denz-dev/assets/profile.jpg" alt="Alden Calatrava" />
+                <img src="assets/profile.jpg" alt="Alden Calatrava" />
               </div>
               <div class="floating-elements">
                 <div class="floating-card wordpress">
