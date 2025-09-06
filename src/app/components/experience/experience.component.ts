@@ -432,7 +432,7 @@ export class ExperienceComponent {
 
   professionalStats = [
     {
-      number: '6+',
+      number: '8+',
       label: 'Projects Completed',
       icon: 'fas fa-project-diagram'
     },

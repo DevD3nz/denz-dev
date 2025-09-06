@@ -15,12 +15,13 @@ import { CommonModule } from '@angular/common';
               Alden <span class="text-primary">Calatrava</span>
             </h1>
             <h2 class="hero-title fade-in-up">
-              Web Developer & WordPress Specialist
+              Web App Developer & WordPress Specialist
             </h2>
             <p class="hero-description fade-in-up">
-              I create modern, responsive websites using WordPress and Angular. 
-              Specializing in custom plugins, SEO optimization, and web performance 
-              to help businesses establish a strong online presence.
+              I build modern, responsive websites using Angular, Laravel, and WordPress,
+               delivering seamless user experiences across devices.
+               I specialize in custom plugin development, third-party API integrations, SEO Basic, 
+               and web performance enhancements to help businesses establish a strong, scalable online presence.
             </p>
             
             <div class="hero-stats fade-in-up">

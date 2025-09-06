@@ -26,7 +26,7 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
 
               <a href="tel:+639123456789" class="contact-link">
                 <i class="fas fa-phone"></i>
-                +63 09764449562
+                +63 9764449562
               </a>
             </div>
           </div>

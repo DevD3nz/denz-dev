@@ -22,16 +22,16 @@ import { FormsModule } from '@angular/forms';
                 Creating modern, responsive websites that drive business growth.
               </p>
               <div class="social-links">
-                <a href="https://linkedin.com/in/alden-calatrava" target="_blank" class="social-link">
+                <a href="https://www.linkedin.com/in/d3nzofficials/" target="_blank" class="social-link">
                   <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/alden-calatrava" target="_blank" class="social-link">
+                <a href="https://github.com/DevD3nz" target="_blank" class="social-link">
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="https://twitter.com/alden-calatrava" target="_blank" class="social-link">
+                <a href="#" target="_blank" class="social-link">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="mailto:calatravaalden&#64;gmail.com" class="social-link">
+                <a href="mailto:denz.devtest&#64;gmail.com" class="social-link">
                   <i class="fas fa-envelope"></i>
                 </a>
               </div>
@@ -71,7 +71,7 @@ import { FormsModule } from '@angular/forms';
                   </li>
                   <li>
                     <i class="fas fa-phone"></i>
-                    <a href="tel:+639123456789">+63 09764449562</a>
+                    <a href="tel:+639123456789">+63 9764449562</a>
                   </li>
                   <li>
                     <i class="fas fa-map-marker-alt"></i>
