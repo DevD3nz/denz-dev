@@ -40,3 +40,14 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+.angular 
+/node_modules
+
+# Ignore everything except docs folder and README
+*
+!docs/
+!docs/**
+!README.md 
+/public
+/src
+/
