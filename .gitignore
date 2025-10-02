@@ -1,5 +1,11 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
+# Ignore everything except docs folder and README
+*
+!docs/
+!docs/**
+!README.md
+
 # Compiled output
 /dist
 /tmp
@@ -42,12 +48,3 @@ testem.log
 Thumbs.db
 .angular 
 /node_modules
-
-# Ignore everything except docs folder and README
-*
-!docs/
-!docs/**
-!README.md 
-/public
-/src
-/
