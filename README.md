@@ -34,6 +34,7 @@ Passionate full-stack web developer with expertise in Laravel, Angular, and Word
 - **SEO Optimization** - Search engine optimization Basic Setup
 - **Google Api** - Login integration and others
 - **Performance Optimization** - Fast, efficient web applications
+- **Google AppScript** - Mini document automations
 
 ## 💼 Services Offered
 - Custom web application development
